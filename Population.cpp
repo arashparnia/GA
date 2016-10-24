@@ -23,13 +23,11 @@ Chromosome* Population::CreateRandomChromosome()
 }
 
 
-
-void insertChromosomeToPopulation(Chromosome *ch) {
-
-    Population::pop.push_back(ch);
-//    pop.push_back(ch);
-
+void Population::insertChromosomeToPopulation(Chromosome *ch) {
+//    pop->push_back(ch);
 }
+
+
 
 int Population::getChromosomeLength() const {
     return chromosomeLength;
@@ -38,5 +36,6 @@ int Population::getChromosomeLength() const {
 void Population::setChromosomeLength(int chromosomeLength) {
     Population::chromosomeLength = chromosomeLength;
 }
+
 
 

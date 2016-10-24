@@ -24,7 +24,7 @@ public:
 
 private:
 
-    std::vector<Chromosome> pop;
+    std::vector<Chromosome> *pop;
 
     int chromosomeLength;
 
