@@ -4,9 +4,7 @@
 #include <vector>
 #include "Population.h"
 Population::Population(int chromosomeLength) : chromosomeLength(chromosomeLength) {
-//    pop* population = new  std::vector<Chromosome*>();
-//    pop->pop_back();
-//    population.pop_back();
+    pop.clear();
 }
 
 Chromosome* Population::CreateRandomChromosome()
@@ -24,7 +22,7 @@ Chromosome* Population::CreateRandomChromosome()
 
 
 void Population::insertChromosomeToPopulation(Chromosome *ch) {
-//    pop->push_back(ch);
+    pop.push_back(ch);
 }
 
 
