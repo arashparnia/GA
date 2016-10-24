@@ -11,6 +11,9 @@
 class Population {
 
 public:
+    const std::vector<Chromosome *> &getPop() const;
+
+    void setPop(const std::vector<Chromosome *> &pop);
 
     Population(int chromosomeLength);
 
@@ -21,6 +24,8 @@ public:
     int getChromosomeLength() const;
 
     void setChromosomeLength(int chromosomeLength);
+
+    virtual ~Population();
 
 private:
 

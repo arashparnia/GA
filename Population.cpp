@@ -20,12 +20,9 @@ Chromosome* Population::CreateRandomChromosome()
     return ch;
 }
 
-
 void Population::insertChromosomeToPopulation(Chromosome *ch) {
     pop.push_back(ch);
 }
-
-
 
 int Population::getChromosomeLength() const {
     return chromosomeLength;
@@ -35,5 +32,14 @@ void Population::setChromosomeLength(int chromosomeLength) {
     Population::chromosomeLength = chromosomeLength;
 }
 
+const std::vector<Chromosome *> &Population::getPop() const {
+    return pop;
+}
 
+void Population::setPop(const std::vector<Chromosome *> &pop) {
+    Population::pop = pop;
+}
 
+Population::~Population() {
+
+}
