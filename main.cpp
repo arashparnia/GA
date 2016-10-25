@@ -23,9 +23,9 @@ int main() {
 //    }
 
 
-    Population *pop = new Population(10);
+    Population *pop = new Population(100);
 
-    for (int j = 0; j < 10; ++j) {
+    for (int j = 0; j < 100; ++j) {
         pop->insertChromosomeToPopulation(pop->CreateRandomChromosome());
 
     }
@@ -35,9 +35,9 @@ int main() {
         for (int i = 0; i < v.at(k)->getlength(); ++i) {
             std::cout << " " << v.at(k)->getChromosomeAtIndex(i);
         }
-        std::cout << "" << std::endl;
+        std::cout <<  std::endl;
     }
-//    std::cout << c-> << std::endl;
+
 
 
     return 0;

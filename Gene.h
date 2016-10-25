@@ -12,6 +12,7 @@
 
 class Gene {
 public:
+
     Gene();
 
     Gene(float gene);
@@ -26,10 +27,19 @@ public:
 
     bool operator!=(const Gene &rhs) const;
 
+    void mutate();
+
+    void mutate(int lowerBound, int upperBound);
+
 //    friend std::ostream &operator<<(std::ostream &os, const Gene &gene);
 
 private:
+
     float gene;
+
+    float randomFloat();
+
+    float randomFloat(int lowerBound, int upperBound);
 
 };
 
